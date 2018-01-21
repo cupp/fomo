@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle fomo",
+        "command": "fomo:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "fomo",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "fomo:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

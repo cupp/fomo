@@ -1,0 +1,77 @@
+'scopeName': 'source.fm'
+'name': "Fomo"
+'fileTypes': [
+  'fm'
+  'fomo'
+]
+
+'patterns': [
+  {
+    'comment': 'marked'
+    'name': 'constant.other.fm'
+    'match': '_.*_'
+  }
+  {
+    'comment': 'error'
+    'name': 'entity.name.function.fm'
+    'match': '^.*(xx)$'
+    'captures':
+      '1':
+        'name': 'variable.other.fm'
+  }
+  {
+    'comment': 'hints'
+    'name': 'variable.other.fm'
+    'match': '<.*?>'
+  }
+  {
+    'comment': 'header'
+    'name': 'variable.other.fm'
+    'match': '^\w+:.*$'
+  }
+  {
+    'comment': 'proposition'
+    'name':  'entity.name.tag.fm'
+    'match': '^PROVE\s|^WHICH IS\s'
+  }
+  {
+    'comment': 'constant'
+    'name': 'constant.language.fm'
+    'match': 'true|false'
+  }
+  {
+    'comment': 'negated variable'
+    'name': 'keyword.operator.fm'
+    'match': '¬([A-Za-z])\W|¬([A-Za-z])$'
+    'captures':
+      '1' :
+        'name': 'comment.line.fm'
+      '2' :
+        'name': 'comment.line.fm'
+  }
+  {
+    'comment': 'variable'
+    'name': 'keyword.operator.fm'
+    'match': '([A-Za-z])|^([A-Za-z])\W|\W([A-Za-z])$|^([A-Za-z])$'
+    'captures':
+      '1' :
+        'name': 'comment.line.fm'
+      '2' :
+        'name': 'comment.line.fm'
+      '3' :
+        'name': 'comment.line.fm'
+      '4' :
+        'name': 'comment.line.fm'
+  }
+  {
+    'comment': 'operator'
+    'name': 'keyword.operator.fm'
+    'match': '([/≡=¬≢≠≥≤⇒⇐≔<>∈∅Ʊ⊂⊃⊆⊇∉⊄⊅⊈⊉∪∩#~⋅*∘∙÷×Ρ↓↑◃▹❘★∀∃∨∧+-^])'
+  }
+  {
+    'comment': 'parens'
+    'name':  'keyword.operator.fm'
+    'match':  '([\)\(\{\}])'
+  }
+
+]
