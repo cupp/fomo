@@ -1,76 +1,87 @@
-'scopeName': 'source.fm'
-'name': "Fomo"
+'scopeName': 'source.fomo'
+'name': "language-fomo"
 'fileTypes': [
   'fm'
   'fomo'
 ]
 
 'patterns': [
+  # {
+  #   'comment': 'marked'
+  #   'name': 'constant.other.fm'
+  #   'match': '_.*_'
+  # }
+  # {
+  #   'comment': 'error'
+  #   'name': 'entity.name.function.fm'
+  #   'match': '^.*(xx)$'
+  #   'captures':
+  #     '1':
+  #       'name': 'variable.other.fm'
+  # }
   {
-    'comment': 'marked'
-    'name': 'constant.other.fm'
-    'match': '_.*_'
+    'comment': 'hint'
+    'name': 'comment.line.fm'
+    'match': '〈.*?〉'
   }
+  # {
+  #   'comment': 'header'
+  #   'name': 'variable.other.fm'
+  #   'match': '^\w+:.*$'
+  # }
   {
-    'comment': 'error'
-    'name': 'entity.name.function.fm'
-    'match': '^.*(xx)$'
-    'captures':
-      '1':
-        'name': 'variable.other.fm'
-  }
-  {
-    'comment': 'hints'
+    'comment': 'seperator'
     'name': 'variable.other.fm'
-    'match': '<.*?>'
+    'match': '([:|])'
   }
-  {
-    'comment': 'header'
-    'name': 'variable.other.fm'
-    'match': '^\w+:.*$'
-  }
+
   {
     'comment': 'proposition'
     'name':  'entity.name.tag.fm'
     'match': '^PROVE\s|^WHICH IS\s'
   }
   {
-    'comment': 'constant'
-    'name': 'constant.language.fm'
+    'comment': 'boolean literal'
+    'name': 'markup.bold.fm'
     'match': 'true|false'
   }
   {
     'comment': 'negated variable'
-    'name': 'keyword.operator.fm'
+    'name': 'variable.language.fm'
     'match': '¬([A-Za-z])\W|¬([A-Za-z])$'
     'captures':
       '1' :
-        'name': 'comment.line.fm'
+        'name': 'markup.italic.fm'
       '2' :
-        'name': 'comment.line.fm'
+        'name': 'markup.italic.fm'
   }
+
   {
     'comment': 'variable'
-    'name': 'keyword.operator.fm'
-    'match': '([A-Za-z])|^([A-Za-z])\W|\W([A-Za-z])$|^([A-Za-z])$'
+    'name': 'markup.italic.fm'
+    'match': '([A-Z])|([a-z])|^([A-Za-z])\W|\W([A-Za-z])$|^([A-Za-z])$'
     'captures':
       '1' :
-        'name': 'comment.line.fm'
+        'name': 'markup.italic.fm'
       '2' :
-        'name': 'comment.line.fm'
+        'name': 'markup.italic.fm'
       '3' :
-        'name': 'comment.line.fm'
+        'name': 'markup.italic.fm'
       '4' :
-        'name': 'comment.line.fm'
+        'name': 'markup.italic.fm'
+      '5' :
+        'name': 'markup.italic.fm'
   }
+
   {
     'comment': 'operator'
-    'name': 'keyword.operator.fm'
-    'match': '([/≡=¬≢≠≥≤⇒⇐≔<>∈∅Ʊ⊂⊃⊆⊇∉⊄⊅⊈⊉∪∩#~⋅*∘∙÷×Ρ↓↑◃▹❘★∀∃∨∧+-^])'
+    'name': 'constant.other.fm'
+    'match': '([/≡=¬≢≠≥≤⇒⇐⇍⇏≔<>∈∅Ʊ⊂⊃⊆⊇∉⊄⊅⊈⊉∪∩#~⋅*∘∙÷×Ρ↓↑◃▹★∀∃⋁⋀+-^])'
   }
+
   {
     'comment': 'parens'
-    'name':  'keyword.operator.fm'
+    'name':  'constant.other.fm'
     'match':  '([\)\(\{\}])'
   }
 

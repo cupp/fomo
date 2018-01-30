@@ -5,10 +5,7 @@
   "description": "A language for formal methods proofs.",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": "fomo:toggle"
-  },
-  "repository": "https://github.com/atom/fomo",
+  "repository": "https://github.com/cupp/fomo",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

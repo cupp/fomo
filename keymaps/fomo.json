@@ -1,5 +1,26 @@
 {
-  "atom-workspace": {
-    "ctrl-alt-o": "fomo:toggle"
+  "atom-text-editor[data-grammar='source fomo']": {
+    "alt-o": "fomo:disjunction",
+    "alt-a": "fomo:conjunction",
+    "alt-g": "fomo:assignment",
+    "alt-s": "fomo:genQuant",
+    "alt-u": "fomo:uniQuant",
+    "alt-x": "fomo:exiQuant",
+    "alt-,": "fomo:atLeast",
+    "alt-.": "fomo:atMost",
+    "alt-/": "fomo:boom",
+    "alt-n": "fomo:negation",
+    "alt-e": "fomo:equivales",
+    "alt-shift-e": "fomo:notEquivales",
+    "alt-i": "fomo:implies",
+    "alt-shift-i": "fomo:notImplies",
+    "alt-f": "fomo:follows",
+    "alt-shift-f": "fomo:notFollows",
+    "ctrl-alt-shift-z": "fomo:integer",
+    "ctrl-alt-shift-n": "fomo:natural",
+    "ctrl-alt-shift-q": "fomo:rational",
+    "ctrl-alt-shift-r": "fomo:real",
+    "ctrl-alt-shift-b": "fomo:bool"
+
   }
 }
