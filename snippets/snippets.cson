@@ -32,60 +32,96 @@
     'prefix': 'sep'
     'body':  '\n------------------------------\n\n'
 
-  # 'negation':
-  #   'prefix': 'n'
-  #   'body': '¬'
-  # 'equivalence':
-  #   'prefix': 'e'
-  #   'body': '≡ '
-  # 'nonequivalence':
-  #   'prefix': 'ne'
-  #   'body': '≢ '
-  # 'differs from':
-  #   'prefix': 'neq'
-  #   'body': '≠ '
-  # 'disjunction':
-  #   'prefix': 'o'
-  #   'body': '⋁ '
-  # 'conjunction':
-  #   'prefix': 'a'
-  #   'body': '⋀ '
-  # 'implication':
-  #   'prefix': 'i'
-  #   'body': '⇒ '
-  # 'follows from':
-  #   'prefix': 'f'
-  #   'body': '⇐ '
-  # 'does not imply':
-  #   'prefix': 'ni'
-  #   'body': '⇏ '
-  # 'does not follow from':
-  #   'prefix': 'nf'
-  #   'body': '⇍ '
-  # 'gets':
-  #   'prefix': 'g'
-  #   'body': '≔ '
-  # 'replaced by':
-  #   'prefix': 'r'
-  #   'body': '≔ '
-  # 'star':
-  #   'prefix': 'star'
-  #   'body': '★'
-  # 'at least':
-  #   'prefix': 'le'
-  #   'body': '≤ '
-  # 'at most':
-  #   'prefix': 'ge'
-  #   'body': '≥ '
-  # 'for all':
-  #   'prefix': 'for'
-  #   'body': '∀'
-  # 'there exists':
-  #   'prefix': 'ex'
-  #   'body': '∃'
-  # 'end of proof':
-  #   'prefix': '//'
-  #   'body': '╱╱'
-  # 'helloo!!':
-  #   'prefix': 'he'
-  #   'body': 'helloo!!'
+  'negation':
+    'prefix': 'n'
+    'body': '¬'
+  'equivalence':
+    'prefix': 'e'
+    'body': '≡ '
+  'nonequivalence':
+    'prefix': 'ne'
+    'body': '≢ '
+  'differs from':
+    'prefix': 'neq'
+    'body': '≠ '
+  'disjunction':
+    'prefix': 'o'
+    'body': '⋁ '
+  'conjunction':
+    'prefix': 'a'
+    'body': '⋀ '
+  'implication':
+    'prefix': 'i'
+    'body': '⇒ '
+  'follows from':
+    'prefix': 'f'
+    'body': '⇐ '
+  'does not imply':
+    'prefix': 'ni'
+    'body': '⇏ '
+  'does not follow from':
+    'prefix': 'nf'
+    'body': '⇍ '
+  'gets':
+    'prefix': 'g'
+    'body': '≔ '
+  'replaced by':
+    'prefix': 'r'
+    'body': '≔ '
+  'star':
+    'prefix': 'star'
+    'body': '★'
+  'at least':
+    'prefix': 'le'
+    'body': '≤ '
+  'at most':
+    'prefix': 'ge'
+    'body': '≥ '
+  'for all':
+    'prefix': 'for'
+    'body': '∀'
+  'there exists':
+    'prefix': 'ex'
+    'body': '∃'
+  'element of':
+    'prefix': 'el'
+    'body': '∊ '
+  'proper subset':
+    'prefix': 'sub'
+    'body': '⊂ '
+  'subset':
+    'prefix': 'sube'
+    'body': '⊆ '
+  'proper superset':
+    'prefix': 'suu'
+    'body': '⊃ '
+  'superset':
+    'prefix': 'supe'
+    'body': '⊇ '
+  'union':
+    'prefix': 'un'
+    'body': '∪ '
+  'intersection':
+    'prefix': 'in'
+    'body': '∩ '
+  'empty set':
+    'prefix': 'es'
+    'body': '∅'
+  'Type: Integer':
+    'prefix': 'tz'
+    'body': 'ℤ'
+  'Type: Natural':
+    'prefix': 'tn'
+    'body': 'ℕ'
+  'Type: Rational':
+    'prefix': 'tq'
+    'body': 'ℚ'
+  'Type: Real':
+    'prefix': 'tr'
+    'body': 'ℝ'
+  'Type: Boolean':
+    'prefix': 'tb'
+    'body': '𝔹'
+  'end of proof':
+    'prefix': '//'
+    'body': '╱╱\n\n'
