@@ -22,12 +22,15 @@
   'hint':
     'prefix': 'h'
     'body': '=\t\t〈 $1 〉\n\t$2'
-  'quantification':
-    'prefix': 'q'
-    'body': '($1 | $2 : $3)$4'
+  'universal quantification':
+    'prefix': 'uq'
+    'body': '(∀$1 | $2 : $3) $4'
+  'universal quantification (range true)':
+    'prefix': 'uqt'
+    'body': '(∀$1 |: $2) $3'
   'comprehension':
     'prefix': 'c'
-    'body': '{$1 | $2 : $3}$4'
+    'body': '{$1 | $2 : $3} $4'
   'seperator':
     'prefix': 'sep'
     'body':  '\n------------------------------\n\n'
@@ -65,9 +68,6 @@
   'gets':
     'prefix': 'g'
     'body': '≔ '
-  'replaced by':
-    'prefix': 'r'
-    'body': '≔ '
   'star':
     'prefix': 'star'
     'body': '★'
@@ -93,7 +93,7 @@
     'prefix': 'sube'
     'body': '⊆ '
   'proper superset':
-    'prefix': 'suu'
+    'prefix': 'sup'
     'body': '⊃ '
   'superset':
     'prefix': 'supe'
