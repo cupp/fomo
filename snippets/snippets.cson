@@ -28,12 +28,21 @@
   'universal quantification (range true)':
     'prefix': 'uqt'
     'body': '(∀$1 |: $2) $3'
+  'existential quantification':
+    'prefix': 'eq'
+    'body': '(∃$1 | $2 : $3) $4'
+  'existential quantification (range true)':
+    'prefix': 'eqt'
+    'body': '(∃$1 |: $2) $3'
   'comprehension':
     'prefix': 'c'
     'body': '{$1 | $2 : $3} $4'
   'seperator':
     'prefix': 'sep'
     'body':  '\n------------------------------\n\n'
+
+
+
 
   'negation':
     'prefix': 'n'
@@ -85,7 +94,10 @@
     'body': '∃'
   'element of':
     'prefix': 'el'
-    'body': '∊ '
+    'body': '∈ '
+  'not element of':
+    'prefix': 'nel'
+    'body': '∉ '
   'proper subset':
     'prefix': 'sub'
     'body': '⊂ '
@@ -98,6 +110,18 @@
   'superset':
     'prefix': 'supe'
     'body': '⊇ '
+  'not proper subset':
+    'prefix': 'nsub'
+    'body': '⊄ '
+  'not subset':
+    'prefix': 'nsube'
+    'body': '⊈ '
+  'not proper superset':
+    'prefix': 'nsup'
+    'body': '⊅ '
+  'not superset':
+    'prefix': 'nsupe'
+    'body': '⊉ '
   'union':
     'prefix': 'un'
     'body': '∪ '
