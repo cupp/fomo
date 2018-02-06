@@ -1,15 +1,13 @@
 {
   "name": "fomo",
   "main": "./lib/fomo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A language for formal methods proofs.",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/cupp/fomo",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
